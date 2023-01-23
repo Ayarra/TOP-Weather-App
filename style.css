@@ -1,0 +1,139 @@
+.html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+  font-family: "Comfortaa", sans-serif;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-form {
+  display: flex;
+
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.error {
+  color: red;
+  font-weight: 700;
+  margin-bottom: 1em;
+  display: none;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+  gap: 1em;
+  text-align: center;
+  border-radius: 1em;
+  background-color: rgb(184, 204, 241);
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  position: relative;
+}
+
+.units {
+  background-color: #48484a93;
+  font-weight: 600;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+  border: none;
+}
+
+.units:hover {
+  color: rgb(184, 204, 241);
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px;
+}
+
+.main-data {
+  display: flex;
+  gap: 2em;
+}
+
+.temp,
+.weather {
+  font-size: x-large;
+  font-weight: 700;
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.temp {
+  border-right: 1px solid black;
+}
+
+.feel-temp {
+  color: rgb(80, 80, 80);
+  font-size: large;
+}
+
+.secondary-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  gap: 2em;
+}
+
+.min-max {
+  display: flex;
+  gap: 1em;
+}
+
+.misc {
+  display: flex;
+  gap: 1em;
+}
+
+.title {
+  color: rgba(71, 101, 202, 0.911);
+  font-weight: 700;
+}
+
+.footer {
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+@media only screen and (max-width: 460px) {
+  .main-data {
+    flex-direction: column;
+    border-bottom: 1px solid black;
+  }
+  .temp {
+    border-bottom: 1px solid black;
+    border-right: none;
+  }
+  .secondary-data {
+    flex-direction: column;
+  }
+  .misc {
+    border-top: 1px solid black;
+  }
+}
